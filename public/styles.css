@@ -1,71 +1,106 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header, footer {
+/* Body styles */
+    body {
+        background-image: url('pexels-bich-tran-1059380.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif; /* Ensure font family is still applied */
+        margin: 0;
+        padding: 0;
+      }
+  
+  /* Header styles */
+  header {
     background-color: #333;
     color: #fff;
-    padding: 1rem;
-}
-
-header h1, footer p {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
     margin: 0;
-}
-
-main {
+  }
+  
+  /* Main container styles */
+  .main-container {
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-#notes-list, #note-form {
-    width: 45%;
-}
-
-#notes-list {
-    border-right: 1px solid #ccc;
-    padding-right: 1rem;
-}
-
-#note-form {
-    padding-left: 1rem;
-}
-
-#note-form h2 {
-    margin-top: 0;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-input[type="text"], textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.btn {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  /* Notes list styles */
+  #notes-list {
+    width: 50%;
+  }
+  
+  #notes-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #notes-list ul li {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #notes-list ul li:hover {
+    background-color: #f2f2f2;
     cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-.btn-group {
-    margin-top: 1rem;
-}
-
-.btn-group button {
-    margin-right: 0.5rem;
-}
+  }
+  
+  /* Note form styles */
+  #note-form {
+    width: 50%;
+    margin-left: 20px;
+  }
+  
+  #note-form h2 {
+    margin-top: 0;
+  }
+  
+  #note-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #note-form input[type="text"],
+  #note-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #note-form .btn-group {
+    margin-top: 10px;
+  }
+  
+  #note-form .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #note-form .btn:hover {
+    background-color: #555;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
